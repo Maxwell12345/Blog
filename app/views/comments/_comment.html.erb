@@ -8,6 +8,10 @@
   <%= comment.body %>
 </p>
 
+<p>
+<%= link_to 'Edit Comment', edit_article_comment_path(@article, comment) %>
+
+</p>
 <!-- DELETE /articles/:article_id/comments/:id-->
 <p>
   <%= link_to 'Destroy Comment', [comment.article, comment],
